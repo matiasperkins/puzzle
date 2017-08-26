@@ -131,3 +131,23 @@ function iniciar(){
   mezclarPiezas(60);
   capturarTeclas();
 }
+function arriba(){
+  moverEnDireccion(38);
+  var gano = chequearSiGano();
+  if(gano) alert('ganaste!');
+}
+function izquierda(){
+  moverEnDireccion(37);
+  var gano = chequearSiGano();
+  if(gano) alert('ganaste!');
+}
+function abajo(){
+  moverEnDireccion(40);
+  var gano = chequearSiGano();
+  if(gano) alert('ganaste!');
+}
+function derecha(){
+  moverEnDireccion(39);
+  var gano = chequearSiGano();
+  if(gano) alert('ganaste!');
+}
